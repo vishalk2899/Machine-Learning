@@ -5,9 +5,9 @@ c=0
 lr=0.0001
 epoch=10000
 
-x1,y1 = np.read_csv("aimarks2017.csv")
-x=pd.Series(x1)
-y=pd.Series(y1)
+x1,y1 = np.loadtxt("aimarks2017.txt",delimiter=',',unpack=True)
+mse_marks=pd.Series(x1)
+ese_marks=pd.Series(y1)
 
 
 n=len(mse_marks)
