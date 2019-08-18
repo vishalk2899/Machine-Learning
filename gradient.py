@@ -5,7 +5,7 @@ c=0
 lr=0.0001
 epoch=10000
 
-dataset = pd.read_csv('Data.csv')
+dataset = pd.read_csv('aimarks2017.csv')
 mse_marks = dataset.iloc[:, :-1].values
 ese_marks = dataset.iloc[:, -1].values
 
