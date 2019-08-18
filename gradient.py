@@ -5,8 +5,10 @@ c=0
 lr=0.0001
 epoch=10000
 
-mse_marks = np.array([15,22,16,18,30])
-ese_marks = np.array([55,68,62,65,72])
+x1,y1 = np.read_csv("aimarks2017.csv")
+x=pd.Series(x1)
+y=pd.Series(y1)
+
 
 n=len(mse_marks)
 
